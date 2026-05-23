@@ -88,7 +88,8 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6">{t.whatIs.title}</h2>
-          <p className="text-lg text-gray-600 max-w-3xl">{t.whatIs.body}</p>
+          <p className="text-lg text-gray-600 max-w-3xl mb-4">{t.whatIs.p1}</p>
+          <p className="text-lg text-gray-600 max-w-3xl">{t.whatIs.p2}</p>
         </div>
       </section>
 
@@ -99,15 +100,21 @@ export default function Home() {
             {t.howItWorks.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {t.howItWorks.steps.map((step) => (
-              <div key={step.number} className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
-                <span className="text-4xl font-bold text-[#2563eb] mb-4 block">
-                  {step.number}
-                </span>
-                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.body}</p>
-              </div>
-            ))}
+            <div className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
+              <span className="text-4xl font-bold text-[#2563eb] mb-4 block">01</span>
+              <h3 className="text-xl font-semibold mb-3">{t.howItWorks.step1Title}</h3>
+              <p className="text-gray-600">{t.howItWorks.step1Body}</p>
+            </div>
+            <div className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
+              <span className="text-4xl font-bold text-[#2563eb] mb-4 block">02</span>
+              <h3 className="text-xl font-semibold mb-3">{t.howItWorks.step2Title}</h3>
+              <p className="text-gray-600">{t.howItWorks.step2Body}</p>
+            </div>
+            <div className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
+              <span className="text-4xl font-bold text-[#2563eb] mb-4 block">03</span>
+              <h3 className="text-xl font-semibold mb-3">{t.howItWorks.step3Title}</h3>
+              <p className="text-gray-600">{t.howItWorks.step3Body}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -116,7 +123,9 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6">{t.providers.title}</h2>
-          <p className="text-lg text-gray-600 max-w-3xl">{t.providers.body}</p>
+          <p className="text-lg text-gray-600 max-w-3xl mb-2">{t.providers.now}</p>
+          <p className="text-lg text-gray-600 max-w-3xl mb-2">{t.providers.soon}</p>
+          <p className="text-lg text-gray-600 max-w-3xl">{t.providers.region}</p>
         </div>
       </section>
 
@@ -124,8 +133,11 @@ export default function Home() {
       <section className="py-20 bg-[#fafafa]">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6">{t.openSource.title}</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mb-4">
+            {t.openSource.p1}
+          </p>
           <p className="text-lg text-gray-600 max-w-3xl mb-10">
-            {t.openSource.body}
+            {t.openSource.p2}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -137,12 +149,10 @@ export default function Home() {
               {t.openSource.ctaGithub}
             </a>
             <a
-              href={LINKS.discord}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#waitlist"
               className="px-8 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:border-gray-500 transition-colors text-center"
             >
-              {t.openSource.ctaDiscord}
+              {t.openSource.ctaWaitlist}
             </a>
           </div>
         </div>
@@ -153,7 +163,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">{t.waitlist.title}</h2>
           <p className="text-lg text-gray-600 max-w-xl mx-auto mb-10">
-            {t.waitlist.subtitle}
+            {t.waitlist.body}
           </p>
           <div
             id="beehiiv-form-container"
@@ -170,7 +180,8 @@ export default function Home() {
           <div>
             <span className="font-bold">CryptoPilot</span>
             <p className="text-sm text-gray-500 mt-1">{t.footer.tagline}</p>
-            <p className="text-xs text-gray-400 mt-1">{t.footer.rights}</p>
+            <p className="text-xs text-gray-400 mt-1 max-w-sm">{t.footer.disclaimer}</p>
+            <p className="text-xs text-gray-400 mt-1">{t.footer.copyright}</p>
           </div>
           <div className="flex gap-6 text-sm text-gray-500">
             <a
