@@ -7,12 +7,12 @@ export const translations = {
       ctaSecondary: "View on GitHub"
     },
     whatIs: {
-      title: "What is CryptoPilot?",
+      title: "What Is CryptoPilot?",
       p1: "CryptoPilot is an open-source MCP (Model Context Protocol) server. It connects to your existing accounts and exposes your holdings, balances, and prices to AI assistants like Claude — securely and read-only.",
       p2: "It runs locally on your machine. CryptoPilot never moves your funds, never places trades, and never asks for withdrawal permissions. It only reads."
     },
     howItWorks: {
-      title: "How it works",
+      title: "How It Works",
       step1Title: "Connect your accounts",
       step1Body: "Link your crypto exchanges and brokerages through secure, read-only connections.",
       step2Title: "Run CryptoPilot with Claude",
@@ -21,20 +21,23 @@ export const translations = {
       step3Body: "\"What's my total portfolio value?\" \"How is my crypto allocation split?\" \"What did my tech stocks do this week?\" Claude answers using your real data."
     },
     providers: {
-      title: "Works with your accounts",
+      title: "Works With Your Accounts",
+      nowLabel: "Available now",
+      soonLabel: "Coming soon",
       now: "Available now: Coinbase and Robinhood.",
       soon: "Coming soon: Gemini, E*TRADE, Interactive Brokers, Fidelity, Vanguard, eToro, Webull, Public, and more.",
-      region: "CryptoPilot is built for U.S. investors and supports the providers available in your region."
+      region: "CryptoPilot is built for U.S. investors and supports the providers available in your region.",
+      trademark: "CryptoPilot is not affiliated with any exchange or brokerage. All names are trademarks of their respective owners."
     },
     openSource: {
-      title: "Open source at the core",
+      title: "Open Source at the Core",
       p1: "The CryptoPilot MCP server is open source under the MIT license. Developers can run it today, inspect every line, and contribute.",
       p2: "A polished web and mobile experience is on the way — join the waitlist to get early access.",
       ctaGithub: "View on GitHub",
       ctaWaitlist: "Join the waitlist"
     },
     waitlist: {
-      title: "Be first in line",
+      title: "Be First in Line",
       body: "The web and mobile apps are coming. Join the waitlist and we'll let you know when early access opens."
     },
     footer: {
@@ -66,9 +69,12 @@ export const translations = {
     },
     providers: {
       title: "Funciona con tus cuentas",
+      nowLabel: "Disponible ahora",
+      soonLabel: "Próximamente",
       now: "Disponible ahora: Coinbase y Robinhood.",
       soon: "Próximamente: Gemini, E*TRADE, Interactive Brokers, Fidelity, Vanguard, eToro, Webull, Public, y más.",
-      region: "CryptoPilot está hecho para inversionistas en EE. UU. y soporta los proveedores disponibles en tu región."
+      region: "CryptoPilot está hecho para inversionistas en EE. UU. y soporta los proveedores disponibles en tu región.",
+      trademark: "CryptoPilot no está afiliado a ningún exchange ni casa de bolsa. Todos los nombres son marcas registradas de sus respectivos dueños."
     },
     openSource: {
       title: "Código abierto en su núcleo",

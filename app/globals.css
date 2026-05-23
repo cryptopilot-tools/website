@@ -3,3 +3,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: #1C1B18;
+  color: #F5F4EF;
+}
