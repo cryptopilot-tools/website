@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { translations } from "@/lib/translations";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CryptoPilot — Privacy-first portfolio analytics for AI",
-  description:
-    "Connect your crypto and brokerage accounts to Claude and other AI assistants. Read-only, open-source MCP server. Ask about your portfolio in plain language.",
+  description: translations.en.hero.subtitle,
   openGraph: {
     title: "CryptoPilot — Privacy-first portfolio analytics for AI",
-    description:
-      "Connect your crypto and brokerage accounts to Claude. Read-only, open-source.",
+    description: translations.en.footer.tagline,
     url: "https://cryptopilot.tools",
     siteName: "CryptoPilot",
     type: "website",
