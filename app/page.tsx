@@ -21,14 +21,15 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-white text-[#1a1a1a] font-sans">
-      {/* Header */}
+    <>
       <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <span className="text-xl font-bold tracking-tight">CryptoPilot</span>
           <div className="flex gap-1">
             <button
               onClick={() => setLang("en")}
+              aria-pressed={lang === "en"}
+              aria-label="Switch to English"
               className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
                 lang === "en"
                   ? "bg-[#2563eb] text-white"
@@ -39,6 +40,8 @@ export default function Home() {
             </button>
             <button
               onClick={() => setLang("es")}
+              aria-pressed={lang === "es"}
+              aria-label="Cambiar a español"
               className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
                 lang === "es"
                   ? "bg-[#2563eb] text-white"
@@ -50,6 +53,8 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      <main className="bg-white text-[#1a1a1a]">
 
       {/* Hero */}
       <section className="py-24 bg-[#fafafa]">
@@ -158,8 +163,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-gray-100">
+      </main>
+
+      <footer className="py-12 border-t border-gray-100 bg-white text-[#1a1a1a]">
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <span className="font-bold">CryptoPilot</span>
@@ -194,6 +200,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </main>
+    </>
   );
 }
