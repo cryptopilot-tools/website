@@ -59,7 +59,7 @@ export default function Home() {
       {/* Hero */}
       <section className="py-24 bg-[#fafafa]">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold leading-tight tracking-tight mb-6 whitespace-pre-line">
+          <h1 className="text-5xl font-bold leading-tight tracking-tight mb-6">
             {t.hero.title}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
