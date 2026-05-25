@@ -8,11 +8,19 @@ export default function HowItWorksPage() {
 
   return (
     <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
-      <section className="flex-1 py-12 bg-[#252420]">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8 text-center text-[#F5F4EF]">
+
+      {/* Sección 1 — título solo, fondo oscuro */}
+      <section className="py-12 bg-[#1C1B18]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-[#F5F4EF]">
             {t.howItWorks.title}
           </h2>
+        </div>
+      </section>
+
+      {/* Sección 2 — 3 cards, fondo claro, llena el resto del viewport */}
+      <section className="flex-1 py-12 bg-[#252420]">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
               className="bg-[#1C1B18] rounded-xl p-8"
@@ -62,6 +70,7 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+
     </main>
   );
 }
