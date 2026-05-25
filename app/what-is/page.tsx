@@ -10,30 +10,31 @@ export default function WhatIsPage() {
 
   return (
     <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
-      {/* What Is */}
+
+      {/* Section 1 — title only, dark */}
       <section className="py-12 bg-[#1C1B18]">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-            <div>
-              <h2 className="text-3xl font-bold text-[#F5F4EF]">
-                {t.whatIs.title}
-              </h2>
-            </div>
-            <div className="flex flex-col gap-4 md:min-h-[240px]">
-              <p className="text-lg" style={{ color: "#B8B6AC" }}>
-                {t.whatIs.p1}
-              </p>
-              <p className="text-lg" style={{ color: "#B8B6AC" }}>
-                {t.whatIs.p2}
-              </p>
-            </div>
-          </div>
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-[#F5F4EF]">
+            {t.whatIs.title}
+          </h2>
         </div>
       </section>
 
-      {/* Open Source */}
+      {/* Section 2 — all content, lighter, fills remaining viewport */}
       <section className="flex-1 py-12 bg-[#252420]">
         <div className="max-w-5xl mx-auto px-6">
+
+          {/* What Is paragraphs */}
+          <div className="flex flex-col gap-4 max-w-3xl mb-12">
+            <p className="text-lg" style={{ color: "#B8B6AC" }}>
+              {t.whatIs.p1}
+            </p>
+            <p className="text-lg" style={{ color: "#B8B6AC" }}>
+              {t.whatIs.p2}
+            </p>
+          </div>
+
+          {/* Open Source */}
           <h2 className="text-3xl font-bold mb-6 text-[#F5F4EF]">
             {t.openSource.title}
           </h2>
@@ -62,6 +63,7 @@ export default function WhatIsPage() {
           </div>
         </div>
       </section>
+
     </main>
   );
 }
