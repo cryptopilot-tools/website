@@ -9,11 +9,19 @@ export default function ProvidersPage() {
 
   return (
     <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
-      <section className="flex-1 py-12 bg-[#1C1B18]">
+
+      {/* Section 1 — title only, dark */}
+      <section className="py-12 bg-[#1C1B18]">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-[#F5F4EF]">
+          <h2 className="text-3xl font-bold text-[#F5F4EF]">
             {t.providers.title}
           </h2>
+        </div>
+      </section>
+
+      {/* Section 2 — providers content, lighter, fills remaining viewport */}
+      <section className="flex-1 py-12 bg-[#252420]">
+        <div className="max-w-5xl mx-auto px-6 text-center">
 
           {/* Available now */}
           <div className="mb-8">
@@ -83,6 +91,7 @@ export default function ProvidersPage() {
           </p>
         </div>
       </section>
+
     </main>
   );
 }
