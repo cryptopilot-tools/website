@@ -23,24 +23,24 @@ export default function WaitlistPage() {
   return (
     <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
 
-      {/* Section 1 — title + subtitle, dark */}
+      {/* Section 1 — title only, dark */}
       <section className="py-12 bg-[#1C1B18]">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-[#F5F4EF]">
             {t.waitlist.title}
           </h2>
+        </div>
+      </section>
+
+      {/* Section 2 — subtitle + form, lighter, fills remaining viewport */}
+      <section className="flex-1 py-12 bg-[#252420]">
+        <div className="max-w-5xl mx-auto px-6">
           <p
-            className="text-lg max-w-xl mx-auto mt-4"
+            className="text-lg max-w-xl mx-auto mb-8 text-center"
             style={{ color: "#B8B6AC" }}
           >
             {t.waitlist.body}
           </p>
-        </div>
-      </section>
-
-      {/* Section 2 — form container, lighter, fills remaining viewport */}
-      <section className="flex-1 py-12 bg-[#252420]">
-        <div className="max-w-5xl mx-auto px-6">
           <div
             style={{
               background: "#1C1B18",
