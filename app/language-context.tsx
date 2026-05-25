@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, startTransition, type ReactNode } from "react";
 
 type Lang = "en" | "es";
 
@@ -18,7 +18,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem("cp-lang");
-    if (stored === "es") setLangState("es");
+    if (stored === "es") startTransition(() => setLangState("es"));
   }, []);
 
   const setLang = (l: Lang) => {
