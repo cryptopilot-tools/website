@@ -9,7 +9,7 @@ export default function WhatIsPage() {
   const t = translations[lang];
 
   return (
-    <main className="bg-[#1C1B18] text-[#F5F4EF]">
+    <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
       {/* What Is */}
       <section className="py-12 bg-[#1C1B18]">
         <div className="max-w-5xl mx-auto px-6">
@@ -32,7 +32,7 @@ export default function WhatIsPage() {
       </section>
 
       {/* Open Source */}
-      <section className="py-12 bg-[#252420]">
+      <section className="flex-1 py-12 bg-[#252420]">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6 text-[#F5F4EF]">
             {t.openSource.title}

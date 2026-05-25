@@ -21,8 +21,8 @@ export default function WaitlistPage() {
   }, []);
 
   return (
-    <main className="bg-[#1C1B18] text-[#F5F4EF]">
-      <section className="py-12 bg-[#1C1B18]">
+    <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
+      <section className="flex-1 py-12 bg-[#1C1B18]">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4 text-[#F5F4EF]">
             {t.waitlist.title}

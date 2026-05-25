@@ -9,9 +9,9 @@ export default function Home() {
   const t = translations[lang];
 
   return (
-    <main className="bg-[#1C1B18] text-[#F5F4EF]">
+    <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
       {/* Hero */}
-      <section className="py-16 bg-[#252420]">
+      <section className="flex-1 py-16 bg-[#252420]">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold leading-tight tracking-tight mb-6 text-[#F5F4EF]">
             {t.hero.title}
