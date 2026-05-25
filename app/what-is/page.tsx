@@ -48,13 +48,13 @@ export default function WhatIsPage() {
               href={LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 rounded-lg bg-[#22C55E] text-[#1C1B18] font-semibold hover:bg-[#16A34A] transition-colors text-center"
+              className="px-8 py-3 rounded-lg bg-[#22C55E] text-[#1C1B18] text-base font-semibold hover:bg-[#16A34A] transition-colors text-center"
             >
               {t.openSource.ctaGithub}
             </a>
             <Link
               href="/waitlist"
-              className="px-8 py-3 rounded-lg font-semibold transition-colors text-center text-[#4ADE80]"
+              className="px-8 py-3 rounded-lg text-base font-semibold transition-colors text-center text-[#4ADE80]"
               style={{ border: "1px solid #22C55E" }}
             >
               {t.openSource.ctaWaitlist}

@@ -27,7 +27,7 @@ export default function HowItWorksPage() {
               <h3 className="text-xl font-semibold mb-3 text-[#F5F4EF]">
                 {t.howItWorks.step1Title}
               </h3>
-              <p style={{ color: "#B8B6AC" }}>{t.howItWorks.step1Body}</p>
+              <p className="text-base" style={{ color: "#B8B6AC" }}>{t.howItWorks.step1Body}</p>
             </div>
             <div
               className="bg-[#1C1B18] rounded-xl p-8"
@@ -42,7 +42,7 @@ export default function HowItWorksPage() {
               <h3 className="text-xl font-semibold mb-3 text-[#F5F4EF]">
                 {t.howItWorks.step2Title}
               </h3>
-              <p style={{ color: "#B8B6AC" }}>{t.howItWorks.step2Body}</p>
+              <p className="text-base" style={{ color: "#B8B6AC" }}>{t.howItWorks.step2Body}</p>
             </div>
             <div
               className="bg-[#1C1B18] rounded-xl p-8"
@@ -57,7 +57,7 @@ export default function HowItWorksPage() {
               <h3 className="text-xl font-semibold mb-3 text-[#F5F4EF]">
                 {t.howItWorks.step3Title}
               </h3>
-              <p style={{ color: "#B8B6AC" }}>{t.howItWorks.step3Body}</p>
+              <p className="text-base" style={{ color: "#B8B6AC" }}>{t.howItWorks.step3Body}</p>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function ProvidersPage() {
               {PROVIDERS_NOW.map((name) => (
                 <span
                   key={name}
-                  className="font-medium"
+                  className="text-sm font-medium"
                   style={{
                     background: "rgba(34,197,94,0.12)",
                     color: "#4ADE80",
@@ -54,7 +54,7 @@ export default function ProvidersPage() {
               {PROVIDERS_SOON.map((name) => (
                 <span
                   key={name}
-                  className="font-medium"
+                  className="text-sm font-medium"
                   style={{
                     background: "rgba(255,255,255,0.04)",
                     color: "#C8C6BC",
@@ -76,8 +76,8 @@ export default function ProvidersPage() {
             {t.providers.region}
           </p>
           <p
-            className="mx-auto text-center"
-            style={{ color: "#75736B", fontSize: "12px", maxWidth: "430px" }}
+            className="text-xs mx-auto text-center"
+            style={{ color: "#75736B", maxWidth: "430px" }}
           >
             {t.providers.trademark}
           </p>

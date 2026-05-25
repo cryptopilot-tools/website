@@ -25,7 +25,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/waitlist"
-              className="px-8 py-3 rounded-lg bg-[#22C55E] text-[#1C1B18] font-semibold hover:bg-[#16A34A] transition-colors"
+              className="px-8 py-3 rounded-lg bg-[#22C55E] text-[#1C1B18] text-base font-semibold hover:bg-[#16A34A] transition-colors"
             >
               {t.hero.ctaPrimary}
             </Link>
@@ -33,7 +33,7 @@ export default function Home() {
               href={LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 rounded-lg font-semibold transition-colors text-[#4ADE80]"
+              className="px-8 py-3 rounded-lg text-base font-semibold transition-colors text-[#4ADE80]"
               style={{ border: "1px solid #22C55E" }}
             >
               {t.hero.ctaSecondary}
