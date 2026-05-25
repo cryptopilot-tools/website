@@ -11,13 +11,13 @@ export default function Footer() {
     <footer
       className="py-12 bg-[#1C1B18] text-[#F5F4EF]"
     >
-      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-4">
+      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <span className="font-bold text-[#F5F4EF]">CryptoPilot</span>
           <p className="text-sm mt-1" style={{ color: "#9B998F" }}>
             {t.footer.tagline}
           </p>
-          <p className="text-xs mt-1 max-w-sm" style={{ color: "#75736B" }}>
+          <p className="text-xs mt-1 max-w-md" style={{ color: "#75736B" }}>
             {t.footer.disclaimer}
           </p>
           <p className="text-xs mt-1" style={{ color: "#75736B" }}>
