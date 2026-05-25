@@ -19,7 +19,7 @@ export default function WhatIsPage() {
                 {t.whatIs.title}
               </h2>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 md:min-h-[240px]">
               <p className="text-lg" style={{ color: "#B8B6AC" }}>
                 {t.whatIs.p1}
               </p>
