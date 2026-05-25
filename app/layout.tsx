@@ -29,9 +29,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-[#1C1B18] text-[#F5F4EF]`}>
         <LanguageProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <div className="flex-1">
+              {children}
+            </div>
+            <Footer />
+          </div>
         </LanguageProvider>
         <script
           async
