@@ -22,25 +22,31 @@ export default function WaitlistPage() {
 
   return (
     <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
-      <section className="flex-1 py-12 bg-[#1C1B18]">
+
+      {/* Section 1 — title + subtitle, dark */}
+      <section className="py-12 bg-[#1C1B18]">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-[#F5F4EF]">
+          <h2 className="text-3xl font-bold text-[#F5F4EF]">
             {t.waitlist.title}
           </h2>
           <p
-            className="text-lg max-w-xl mx-auto mb-6"
+            className="text-lg max-w-xl mx-auto mt-4"
             style={{ color: "#B8B6AC" }}
           >
             {t.waitlist.body}
           </p>
+        </div>
+      </section>
+
+      {/* Section 2 — form container, lighter, fills remaining viewport */}
+      <section className="flex-1 py-12 bg-[#252420]">
+        <div className="max-w-5xl mx-auto px-6">
           <div
-            className="mx-auto"
             style={{
-              background: "#252420",
+              background: "#1C1B18",
               padding: "24px",
               borderRadius: "12px",
               border: "0.5px solid rgba(255,255,255,0.1)",
-              maxWidth: "480px",
               minHeight: 320,
             }}
           >
@@ -48,6 +54,7 @@ export default function WaitlistPage() {
           </div>
         </div>
       </section>
+
     </main>
   );
 }
