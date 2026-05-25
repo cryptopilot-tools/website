@@ -11,3 +11,18 @@ export const PROVIDERS_SOON = [
   "Gemini", "E*TRADE", "Interactive Brokers", "Fidelity",
   "Vanguard", "eToro", "Webull", "Public"
 ];
+
+export const NAV = {
+  en: {
+    what: "What is it",
+    how: "How it works",
+    providers: "Providers",
+    joinWaitlist: "Join the waitlist"
+  },
+  es: {
+    what: "Qué es",
+    how: "Cómo funciona",
+    providers: "Proveedores",
+    joinWaitlist: "Unirme a la lista"
+  }
+};
