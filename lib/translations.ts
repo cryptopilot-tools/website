@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     hero: {
-      title: "Your entire portfolio, in one conversation.",
+      title: "Your Entire Portfolio, in One Conversation.",
       subtitle: "CryptoPilot is a privacy-first, read-only analytics layer that connects your crypto and brokerage accounts to Claude and other AI assistants. Ask questions about your holdings in plain language — no spreadsheets, no manual entry.",
       ctaPrimary: "Join the waitlist",
       ctaSecondary: "View on GitHub"
