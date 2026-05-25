@@ -7,8 +7,8 @@ export default function HowItWorksPage() {
   const t = translations[lang];
 
   return (
-    <main className="bg-[#1C1B18] text-[#F5F4EF]">
-      <section className="py-12 bg-[#252420]">
+    <main className="flex-1 flex flex-col bg-[#1C1B18] text-[#F5F4EF]">
+      <section className="flex-1 py-12 bg-[#252420]">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-center text-[#F5F4EF]">
             {t.howItWorks.title}
